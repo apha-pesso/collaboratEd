@@ -6,6 +6,9 @@ import fetchData from "./utils/fetchData";
 // Use env variable to set the url for production
 const url = "http://localhost:5050/api";
 
+// Deployment URL
+const url = "https://collaborated.onrender.com"
+
 // Action to register a new user
 export const register = async (dispatch, user) => {
   dispatch({ type: "START_LOADING" });
