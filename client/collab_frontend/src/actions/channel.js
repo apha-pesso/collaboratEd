@@ -1,5 +1,5 @@
 import fetchData from "./utils/fetchChannelData";
-import { initiateCall } from "./utils/peerConnection";
+// import { initiateCall } from "./utils/peerConnection";
 
 // Use env variable to set the url for production
 const url = "http://localhost:5050/api";
@@ -61,7 +61,7 @@ export const joinVoiceChannel = async (dispatch, channelId, userId) => {
       dispatch({ type: "SET_VOICE_CHANNEL", payload: channelId });
 
       // initiate  the peer connection
-      initiateCall(data.channelid);
+      // initiateCall(data.channelid);
     }
   } catch (error) {
     console.error("Error joining voice channel:", error);
