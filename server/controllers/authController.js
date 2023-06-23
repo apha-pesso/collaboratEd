@@ -78,9 +78,9 @@ const authController = {
       req.user = decoded;
       req.token = token;
       next();
-    } catch (err) {
-      return res.status(401).json({ error: 'Unauthorized' });
-    }
+    // } catch (err) {
+    //   return res.status(401).json({ error: 'Unauthorized' });
+    // }
   },
 
   // Get user data
