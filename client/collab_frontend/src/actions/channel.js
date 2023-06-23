@@ -6,6 +6,7 @@ import fetchData from "./utils/fetchChannelData";
 
 // Change url to backend render
 const url = "https://collaborated.onrender.com";
+console.log(url);
 
 // Action to create a channel
 export const createChannel = async (dispatch, channel) => {
