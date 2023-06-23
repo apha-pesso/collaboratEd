@@ -5,7 +5,7 @@ import fetchData from "./utils/fetchChannelData";
 // const url = "http://localhost:5050/api";
 
 // Change url to backend render
-const url = "https://collaborated.onrender.com";
+const url = "https://collaborated.onrender.com/api";
 console.log(url);
 
 // Action to create a channel
