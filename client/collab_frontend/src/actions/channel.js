@@ -2,7 +2,10 @@ import fetchData from "./utils/fetchChannelData";
 // import { initiateCall } from "./utils/peerConnection";
 
 // Use env variable to set the url for production
-const url = "http://localhost:5050/api";
+// const url = "http://localhost:5050/api";
+
+// Change url to backend render
+const url = "https://collaborated.onrender.com";
 
 // Action to create a channel
 export const createChannel = async (dispatch, channel) => {
