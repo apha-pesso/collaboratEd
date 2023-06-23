@@ -6,6 +6,7 @@ const Group = require('../models/Group');
 require('dotenv').config();
 
 const uri = process.env.MONGO_URI;
+console.log(uri);
 
 class Database {
   constructor() {
