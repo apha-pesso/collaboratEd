@@ -4,7 +4,7 @@ import fetchData from "./utils/fetchData";
 // User related actions
 
 // Use env variable to set the url for production
-const url = "http://localhost:5050/api";
+// const url = "http://localhost:5050/api";
 
 // Deployment URL
 const url = "https://collaborated.onrender.com"
