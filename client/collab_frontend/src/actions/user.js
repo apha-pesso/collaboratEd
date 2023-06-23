@@ -1,7 +1,7 @@
 // import fetchData from "./utils/fetchData";
 import fetchData from "./utils/fetchData";
 
-// User related actions
+//User-related actions
 
 // Use env variable to set the url for production
 // const url = "http://localhost:5050/api";
