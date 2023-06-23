@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
 const db = require('../utils/db');
-const redisClient = require('../utils/redis');
+// const redisClient = require('../utils/redis');
 require('dotenv').config();
 
 const jwtSecret = process.env.JWT_SECRET;
@@ -66,12 +66,12 @@ const authController = {
       return res.status(401).json({ error: 'No token, unauthorized' });
     }
 
-    try {
-      // Check if the token is blacklisted
-      const tokenCHeck = await redisClient.get(token);
-      if (tokenCHeck) {
-        return res.status(401).json({ error: 'Unauthorized' });
-      }
+    // try {
+    //   // Check if the token is blacklisted
+    //   const tokenCHeck = await redisClient.get(token);
+    //   if (tokenCHeck) {
+    //     return res.status(401).json({ error: 'Unauthorized' });
+    //   }
 
       // Verify the token
       const decoded = jwt.verify(token, jwtSecret);
