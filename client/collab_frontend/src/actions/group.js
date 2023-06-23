@@ -1,6 +1,9 @@
 import fetchGroupData from "./utils/fetchGroupData";
 // Use env variable to set the url for production
-const url = "http://localhost:5050/api";
+// const url = "http://localhost:5050/api";
+
+// Change url to backend render
+const url = "https://collaborated.onrender.com";
 
 // Action to create a group
 export const createGroup = async (dispatch, group) => {
