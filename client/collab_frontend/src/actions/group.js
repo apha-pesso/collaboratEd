@@ -3,7 +3,7 @@ import fetchGroupData from "./utils/fetchGroupData";
 // const url = "http://localhost:5050/api";
 
 // Change url to backend render
-const url = "https://collaborated.onrender.com";
+const url = "https://collaborated.onrender.com/api";
 
 // Action to create a group
 export const createGroup = async (dispatch, group) => {
