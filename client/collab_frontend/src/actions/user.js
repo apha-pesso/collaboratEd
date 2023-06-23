@@ -7,7 +7,7 @@ import fetchData from "./utils/fetchData";
 // const url = "http://localhost:5050/api";
 
 // Deployment URL
-const url = "https://collaborated.onrender.com"
+const url = "https://collaborated.onrender.com/api"
 
 // Action to register a new user
 export const register = async (dispatch, user) => {
